@@ -1,7 +1,18 @@
 [project]
-name = "myapp"
-version = "0.1.0"
-description = "Add your description here"
+name = "restfull-api-fastapi-supabase"
+version = "1.0.0-Beta"
+description = "restfull-api-fastapi-supabase"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "boto3>=1.40.30",
+    "fastapi[standard]>=0.116.1",
+    "openai>=1.107.2",
+    "python-dotenv>=1.1.1",
+    "supabase>=2.18.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
